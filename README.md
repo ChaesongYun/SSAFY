@@ -18,7 +18,6 @@ Javascript 객체 문법으로 구조화된 데이터를 표현하기 위한 문
 
 ## PJT02
 ### numpy, pandas, matplotlib 기본활용
----
 **numpy**<br>
 행렬/배열 처리 및 연산<br>
 1. 기존 배열을 numpy array로 변형
