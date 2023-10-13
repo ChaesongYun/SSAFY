@@ -66,6 +66,9 @@ Javascript 객체 문법으로 구조화된 데이터를 표현하기 위한 문
 
 ## PJT04
 django와 matplotlib 결합
+
+<img width="80%" src="./README_img/PJT04시연영상.gif"/>
+
 <br>
 
 ##PJT05
