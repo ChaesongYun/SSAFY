@@ -73,3 +73,6 @@ django와 matplotlib 결합
 <br>
 
 ## PJT05
+django와 matplotlib 결합
+
+<img width="100%" src="./README_img/PJT05시연영상.gif" />
