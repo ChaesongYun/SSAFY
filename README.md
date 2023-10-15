@@ -65,14 +65,58 @@ Javascript 객체 문법으로 구조화된 데이터를 표현하기 위한 문
 <br>
 
 ## PJT04
-django와 matplotlib 결합
+### django와 matplotlib 결합
+1. problem1
+- pandas를 활용하여 캐글에서 다운받은 파일을 DataFrame으로 읽어온다
+- 전체 데이터를 표 형태로 출력한다
+<br>
+<br>
 
+2. problem2
+- 일별 최고, 평균, 최저 온도를 선 그래프로 출력한다
+    - 날짜 필드: 날짜 형식으로 변환하여 사용
+<br>
+<br>
+
+3. problem3
+- 월별 최고, 평균, 최저 온도의 평균을 선 그래프로 시각화한다
+    - 날짜 필드: 날짜 형식으로 변환하여 사용
+    - 온도 필드: 평균값 계산을 위해 숫자 형식으로 변환하여 사용
+<br>
+<br>
+
+4. problem4
+- 가상 현상 발생횟수를 bar그래프로 출력한다
+    - 사용되는 Events 컬럼은 "결측치"가 포함되어 있으며 "다중값을 허용"한다
+    - 다중값은 각 기상 현상의 발생 횟수에 추가하여 계산
+      ex) "Rain, Thunderstorm" = "Rain+1, Thunderstorm+1" 로 계산
+
+<br>
+<br>
 <img width="80%" src="./README_img/PJT04시연영상.gif"/>
 
 <br>
 <br>
 
 ## PJT05
-django와 matplotlib 결합
+### django와 matplotlib 결합
+1. keyword.html
+- 검색하고자 하는 키워드를 추가 및 삭제할 수 있도록 구성한다
+- 생성하기 및 삭제하기 버튼을 통해 Keyword테이블에 데이터를 저장 및 삭제하도록 구성하다
+<br>
+<br>
+
+2. crawling.html
+- Keyword 테이블에 저장된 키워드들을 활용하여 크롬 검색 결과 페이지 크롤링을 수행한다
+- 페이지의 정보 중 "검색 결과 개수"를 추출하여 Trend 테이블에 저장한다
+- 저장 시 이미 저장되어 있는 키워드라면 새로 생성하지 않고 검색 결과 개수를 변경한다
+<br>
+<br>
+
+3. crawling_histogram.html
+- 전체 기간 검색 결과를 활용하여 막대 그래프를 출력한다
+- 크롤링을 다시 진행하지 않고 Trend에 저장된 데이터를 활용한다
+<br>
+<br>
 
 <img width="100%" src="./README_img/PJT05시연영상.gif" />
