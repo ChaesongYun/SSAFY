@@ -102,7 +102,7 @@ Javascript 객체 문법으로 구조화된 데이터를 표현하기 위한 문
 ### django와 matplotlib 결합
 1. keyword.html
 - 검색하고자 하는 키워드를 추가 및 삭제할 수 있도록 구성한다
-- 생성하기 및 삭제하기 버튼을 통해 Keyword테이블에 데이터를 저장 및 삭제하도록 구성하다
+- 생성하기 및 삭제하기 버튼을 통해 Keyword테이블에 데이터를 저장 및 삭제하도록 구성한다
 <br>
 <br>
 
@@ -120,3 +120,39 @@ Javascript 객체 문법으로 구조화된 데이터를 표현하기 위한 문
 <br>
 
 <img width="100%" src="./README_img/PJT05시연영상.gif" />
+
+<br>
+<br>
+
+## PJT05
+### 금융상품정보 API Server 제작
+1. 정기예금 상품 목록 및 옵션 목록 저장
+- 정기예금 API로부터 전달받은 데이터 중 상품 목록 정보와 옵션 목록 정보를 DB에 저장한다
+<br>
+<br>
+
+2. 전체 정기예금 상품 목록 출력
+- 아래 URL로 요청이 오면 DB에 저장된 정기예금 상품목록을 반환하도록 코드를 구현한다
+- url: finlife/deposit-products/
+- method: get
+<br>
+<br>
+
+3. 정기예금 상품 추가하기
+- 아래 URL로 요청이 오면 요청과 함께 전송한 데이터를 DB에 저장하도록 코드를 구현한다
+- url: finlife/deposit-products/
+- method: post
+<br>
+<br>
+
+4. 특정 상품의 옵션 리스트 출력
+- 아래 URL로 요청이 오면 상품 코드에 따라 해당 상품의 옵션 리스트를 출력하도록 코드를 구현한다
+- url: finlife/deposit-product-options/<str:fin_prdt_cd>/
+- method: get
+<br>
+<br>
+
+5. 금리가 가장 높은 상품의 정보 출력
+- 아래 URL로 요청이 오면 금리가 가장 높은 상품의 상세정보와 옵션을 반환하도록 코드를 구현한다
+- url: finlife/deposit-products/top-rate/
+- method: get
