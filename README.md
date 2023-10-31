@@ -156,3 +156,33 @@ Javascript 객체 문법으로 구조화된 데이터를 표현하기 위한 문
 - 아래 URL로 요청이 오면 금리가 가장 높은 상품의 상세정보와 옵션을 반환하도록 코드를 구현한다
 - url: finlife/deposit-products/top-rate/
 - method: get
+
+<br>
+<br>
+
+<table>
+    <tr>
+        <td>
+            <p>url: finlife/deposit-products/<br>
+            method: get</p>
+            <img width='100%' src='./README_img/deposit_products.png'>
+        </td>
+        <td>
+            <p>url: finlife/deposit-products/<br>
+            method: post</p>
+            <img width='100%' src='./README_img/post_deposit_products.png'>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p>url: finlife/deposit-product-options/<str:fin_prdt_cd>/</p>
+            <p>method: get</p>
+            <img width='100%' src='./README_img/deposit-options.png'>
+        </td>
+        <td>
+            <p>url: finlife/deposit-products/top-rate/</p>
+            <p>method: post</p>
+            <img width='100%' src='./README_img/top_rate.png'>
+        </td>
+    </tr>
+</table>
